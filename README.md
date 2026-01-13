@@ -53,6 +53,7 @@ qa-login-automation/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
 
 
 ##  Technologies Used
@@ -66,37 +67,69 @@ qa-login-automation/
 
 ---
 
-##  Continuous Integration (CI)
-
-This project uses **GitHub Actions** to automatically run UI tests:
-
-- Triggered on every `push` to the `main` branch
-- Runs tests in a Linux environment
-- Uses headless Google Chrome
-- Automatically installs dependencies
-- Executes `pytest` and reports results
-
- CI status confirms that the tests are stable and runnable in an isolated environment.
+## 🧪 CI Status
+CI status confirms that the tests are stable and runnable in an isolated environment.
 
 ---
 
-# Clone the repository
+##  Getting Started
+
+###  Clone the repository
+
+```bash
 git clone https://github.com/pers1fal/qa-login-automation.git
+```
+
+```bash
 cd qa-login-automation
+```
 
-# Create virtual environment
+---
+
+###  Create a virtual environment
+
+```bash
 python -m venv venv
+```
 
-# Activate virtual environment
-# Windows
+---
+
+###  Activate the virtual environment
+
+#### Windows
+```bash
 venv\Scripts\activate
+```
 
-# macOS / Linux
+#### macOS / Linux
+```bash
 source venv/bin/activate
+```
 
-# Install dependencies
+---
+
+###  Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-# Run tests
+---
+
+###  Run tests
+
+```bash
 pytest -v
+```
+
+---
+
+##  Why this is important
+
+The CI pipeline (GitHub Actions) automatically runs all tests on every push, ensuring:
+- test stability
+- environment independence
+- continuous validation of the test framework
+
+This setup reflects a real-world QA Automation workflow.
 
