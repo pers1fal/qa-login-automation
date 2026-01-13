@@ -2,7 +2,7 @@
 
 This project demonstrates UI test automation for a login functionality using **Python, Selenium, Pytest**, and the **Page Object Model (POM)** design pattern.
 
-## 🔍 Project Overview
+##  Project Overview
 
 The purpose of this project is to showcase:
 - UI test automation skills
@@ -16,14 +16,14 @@ https://practicetestautomation.com/practice-test-login/
 
 ---
 
-## 🧪 Test Scenarios Covered
+##  Test Scenarios Covered
 
-- ✅ Successful login with valid credentials
-- ❌ Login attempt with invalid password
+-  Successful login with valid credentials
+-  Login attempt with invalid password
 
 ---
 
-## 🏗 Project Structure
+##  Project Structure
 
 ```text
 qa-login-automation/
