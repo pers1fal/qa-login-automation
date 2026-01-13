@@ -5,6 +5,10 @@ __pycache__/
 # Pytest
 .pytest_cache/
 
+# Virtual env
+venv/
+.env
+
 # IDE
 .vscode/
 .idea/
