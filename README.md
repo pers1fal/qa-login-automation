@@ -59,9 +59,25 @@ qa-login-automation/
 
 ##  How to Run Tests
 
-1. Clone the repository:
 ```bash
+# Clone the repository
 git clone https://github.com/pers1fal/qa-login-automation.git
 cd qa-login-automation
+
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# Windows
+venv\Scripts\activate
+
+# macOS / Linux
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run tests
+pytest
 
 
