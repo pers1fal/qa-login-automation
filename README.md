@@ -44,3 +44,24 @@ qa-login-automation/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+
+---
+
+##  Technologies Used
+
+- Python 3.11
+- Selenium WebDriver
+- Pytest
+- Page Object Model (POM)
+- Git & GitHub
+
+---
+
+##  How to Run Tests
+
+1. Clone the repository:
+```bash
+git clone https://github.com/pers1fal/qa-login-automation.git
+cd qa-login-automation
+
+
