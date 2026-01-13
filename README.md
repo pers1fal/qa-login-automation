@@ -1,18 +1,23 @@
 # QA Login Automation Project
 
-This project demonstrates UI test automation for a login functionality using **Python, Selenium, Pytest**, and the **Page Object Model (POM)** design pattern.
+UI test automation project for login functionality using **Python, Selenium, Pytest**, and the **Page Object Model (POM)** design pattern.  
+The project also includes **GitHub Actions CI** for automated test execution on every push.
+
+---
 
 ##  Project Overview
 
-The purpose of this project is to showcase:
-- UI test automation skills
-- Proper test structure and architecture
-- Usage of Page Object Model (POM)
-- Working with Pytest fixtures
-- Git & GitHub workflow
+This project demonstrates practical skills in **UI test automation** and **test framework design**, including:
 
-The tests are written for the demo login page:  
-https://practicetestautomation.com/practice-test-login/
+- UI automation with Selenium WebDriver
+- Test execution with Pytest
+- Page Object Model (POM) architecture
+- Pytest fixtures and test configuration
+- GitHub Actions CI for automated test runs
+- Debugging and fixing CI pipeline issues
+
+Tests are written for the demo login page:  
+ https://practicetestautomation.com/practice-test-login/
 
 ---
 
@@ -29,37 +34,52 @@ https://practicetestautomation.com/practice-test-login/
 qa-login-automation/
 │
 ├── app/
-│ └── init.py
+│   └── __init__.py
 │
 ├── tests/
-│ ├── ui/
-│ │ ├── pages/
-│ │ │ ├── login_page.py # Page Object for Login page
-│ │ │ └── init.py
-│ │ ├── test_login_ui.py # UI tests for login
-│ │ ├── conftest.py # Pytest fixtures (WebDriver setup)
-│ │ └── init.py
-│ └── init.py
+│   ├── ui/
+│   │   ├── pages/
+│   │   │   ├── login_page.py     # Page Object for Login page
+│   │   │   └── __init__.py
+│   │   ├── test_login_ui.py      # UI tests for login
+│   │   ├── conftest.py           # Pytest fixtures (WebDriver setup)
+│   │   └── __init__.py
+│   └── __init__.py
+│
+├── .github/
+│   └── workflows/
+│       └── ui-tests.yml          # GitHub Actions CI workflow
 │
 ├── .gitignore
 ├── README.md
 └── requirements.txt
 
----
 
 ##  Technologies Used
 
-- Python 3.11
-- Selenium WebDriver
-- Pytest
-- Page Object Model (POM)
-- Git & GitHub
+- **Python 3.10+**
+- **Selenium WebDriver**
+- **Pytest**
+- **Page Object Model (POM)**
+- **Git & GitHub**
+- **GitHub Actions (CI)**
 
 ---
 
-##  How to Run Tests
+##  Continuous Integration (CI)
 
-```bash
+This project uses **GitHub Actions** to automatically run UI tests:
+
+- Triggered on every `push` to the `main` branch
+- Runs tests in a Linux environment
+- Uses headless Google Chrome
+- Automatically installs dependencies
+- Executes `pytest` and reports results
+
+ CI status confirms that the tests are stable and runnable in an isolated environment.
+
+---
+
 # Clone the repository
 git clone https://github.com/pers1fal/qa-login-automation.git
 cd qa-login-automation
@@ -78,6 +98,5 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Run tests
-pytest
-
+pytest -v
 
